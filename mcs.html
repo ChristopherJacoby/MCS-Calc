@@ -14,7 +14,7 @@ table {
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 50em) {
   body {
     font-size: .75em;
   }
@@ -69,6 +69,7 @@ function do_calc(theForm) {
 
     if(p5_stretch_text != "" || p5_consistency_text != "" || p5_color_text != "") {
       alert("Dry cannot be selected with anything else."); 
+      reset();
     } 
   }
   
@@ -84,6 +85,7 @@ function do_calc(theForm) {
     
     if(p5_stretch_text == "" && p5_consistency_text == "" && p5_color_text == "") {
       alert("Non-Lubricative cannot be selected by itself.");
+      reset();
     }
   }
 
@@ -135,6 +137,7 @@ function do_calc(theForm) {
 
     if(p4_stretch_text != "" || p4_consistency_text != "" || p4_color_text != "") {
       alert("Dry cannot be selected with anything else."); 
+      reset();
     } 
   }
   
@@ -150,6 +153,7 @@ function do_calc(theForm) {
     
     if(p4_stretch_text == "" && p4_consistency_text == "" && p4_color_text == "") {
       alert("Non-Lubricative cannot be selected by itself.");
+      reset();
     }
   }
 
@@ -201,6 +205,7 @@ function do_calc(theForm) {
 
     if(p3_stretch_text != "" || p3_consistency_text != "" || p3_color_text != "") {
       alert("Dry cannot be selected with anything else."); 
+      reset();
     } 
   }
   
@@ -216,6 +221,7 @@ function do_calc(theForm) {
     
     if(p3_stretch_text == "" && p3_consistency_text == "" && p3_color_text == "") {
       alert("Non-Lubricative cannot be selected by itself.");
+      reset();
     }
   }
 
@@ -267,6 +273,7 @@ function do_calc(theForm) {
 
     if(p2_stretch_text != "" || p2_consistency_text != "" || p2_color_text != "") {
       alert("Dry cannot be selected with anything else."); 
+      reset();
     } 
   }
   
@@ -282,6 +289,7 @@ function do_calc(theForm) {
     
     if(p2_stretch_text == "" && p2_consistency_text == "" && p2_color_text == "") {
       alert("Non-Lubricative cannot be selected by itself.");
+      reset();
     }
   }
 
@@ -333,6 +341,7 @@ function do_calc(theForm) {
 
     if(p1_stretch_text != "" || p1_consistency_text != "" || p1_color_text != "") {
       alert("Dry cannot be selected with anything else."); 
+      reset();
     } 
   }
   
@@ -348,6 +357,7 @@ function do_calc(theForm) {
     
     if(p1_stretch_text == "" && p1_consistency_text == "" && p1_color_text == "") {
       alert("Non-Lubricative cannot be selected by itself.");
+      reset();
     }
   }
 
@@ -399,6 +409,7 @@ function do_calc(theForm) {
 
     if(p_stretch_text != "" || p_consistency_text != "" || p_color_text != "") {
       alert("Dry cannot be selected with anything else."); 
+      reset();
     } 
   }
   
@@ -414,6 +425,7 @@ function do_calc(theForm) {
     
     if(p_stretch_text == "" && p_consistency_text == "" && p_color_text == "") {
       alert("Non-Lubricative cannot be selected by itself.");
+      reset();
     }
   }
 
@@ -1008,7 +1020,7 @@ document.getElementById("dayp_desc").innerHTML = dayp_desc_text;
 <br>
 <div><strong>Note:</strong>
 <ul>
-  <li>Red (VL), Brown (B) and Black (B) are not included in the colors list since they have a value of 0.</li>
+  <li>Red (VL), Brown (B), and Black (B) are not included in the colors list since they have a value of 0.</li>
   <li>Select only "Dry" for 0, 2, 2W, and 4.</li>
   <li>Select only "Lubricative" for 10DL, 10SL, and 10WL.</li>
 </ul>
