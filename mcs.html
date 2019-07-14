@@ -468,6 +468,8 @@ function do_calc(theForm) {
   calc(theForm,true);
 }
 function calc(theForm,do_calc_flag = false) {
+  //added this getElem. to clear score area when new choice is picked.
+  document.getElementById("score").innerHTML = "";
 var day5_desc_text = "";
 
 var select = document.getElementsByName("day_p_minus_5_stretch");      
