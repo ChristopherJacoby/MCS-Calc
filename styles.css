@@ -1,0 +1,13 @@
+  html, body {
+    width: 100%;
+    font-size: 1em;
+}
+table {
+    text-align: center;
+}
+
+@media only screen and (max-width: 50em) {
+  body {
+    font-size: .75em;
+  }
+}
